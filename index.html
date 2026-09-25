@@ -1,281 +1,189 @@
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Houli — Інвертор 1500/3000W</title>
+    <title>Houli — Інвертор 1500/3000W (Pure Sine Wave)</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <div class="logo">HOULI<span>POWER</span></div>
+    <header id="top">
+        <a href="#" class="logo">HOULI<span>POWER</span></a>
+        <nav>
+            <a href="#about">Про товар</a>
+            <a href="#features">Переваги</a>
+            <a href="#specs">Характеристики</a>
+            <a href="#safety">Безпека</a>
+            <a href="#docs">Документи</a>
+        </nav>
+    </header>
 
-    <nav>
-        <a href="#about">Про товар</a>
-        <a href="#features">Переваги</a>
-        <a href="#specs">Характеристики</a>
-        <a href="#docs">Документи</a>
-    </nav>
-</header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="about">
+            <div class="hero-text">
+                <span class="tag">НАДІЙНЕ РЕЗЕРВНЕ ЖИВЛЕННЯ</span>
+                <h1>Інвертор Houli<br><span>12V → 220V</span></h1>
+                <p>
+                    Універсальний перетворювач напруги з чистою синусоїдою для дому, автомобіля та кемпера.
+                    Забезпечує стабільне живлення чутливих електроприладів від акумулятора 12 В.
+                </p>
 
-<section class="hero" id="about">
+                <div class="numbers">
+                    <div class="stat-item">
+                        <h2>1500 Вт</h2>
+                        <p>Постійна потужність</p>
+                    </div>
+                    <div class="stat-item">
+                        <h2>3000 Вт</h2>
+                        <p>Пікова потужність</p>
+                    </div>
+                    <div class="stat-item">
+                        <h2>95%</h2>
+                        <p>Заявлений ККД</p>
+                    </div>
+                </div>
 
-    <div class="hero-text">
-        <p class="tag">НАДІЙНЕ РЕЗЕРВНЕ ЖИВЛЕННЯ</p>
-
-        <h1>Інвертор Houli<br>
-        <span>12V → 220V</span></h1>
-
-        <p>
-            Універсальний перетворювач напруги з чистою
-            синусоїдою для дому, автомобіля та кемпера.
-            Забезпечує живлення сумісних електроприладів
-            від акумулятора 12 В.
-        </p>
-
-        <div class="numbers">
-            <div>
-                <h2>1500 Вт</h2>
-                <p>Постійна потужність</p>
+                <a href="#specs" class="button">Характеристики ↓</a>
             </div>
 
-            <div>
-                <h2>3000 Вт</h2>
-                <p>Максимальна потужність</p>
+            <div class="hero-image">
+                <img src="images/inverter-front.jpg" alt="Інвертор Houli 1500/3000W">
+            </div>
+        </section>
+
+        <!-- Advantages Section -->
+        <section class="advantages" id="features">
+            <h2>Переваги інвертора</h2>
+            <p class="subtitle">Енергія для важливих пристроїв у будь-якій ситуації</p>
+
+            <div class="cards-grid">
+                <article class="card">
+                    <h3>Чиста синусоїда</h3>
+                    <p>Ідеально підходить для чутливої техніки: опалювальних котлів, медичного обладнання та побутової прилади з двигунами.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Активне охолодження</h3>
+                    <p>Інтелектуальний вентилятор ефективно відводить тепло, продовжуючи термін служби пристрою при високому навантаженні.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Багаторівневий захист</h3>
+                    <p>Вбудовані системи захисту від короткого замикання, перевантаження, перегріву та стрибків напруги.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Універсальність</h3>
+                    <p>Відмінний вибір для резервного живлення квартири, приватного будинку, виїздів на природу чи кемпінгу.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Product Application Section -->
+        <section class="product">
+            <div class="product-image">
+                <img src="images/inverter-back.jpg" alt="Інвертор Houli вид ззаду">
             </div>
 
-            <div>
-                <h2>95%</h2>
-                <p>Заявлений ККД</p>
+            <div class="product-text">
+                <span class="tag">КОМПАКТНИЙ ТА ФУНКЦІОНАЛЬНИЙ</span>
+                <h2>Живлення для <span>ваших пристроїв</span></h2>
+                <p>Інвертор перетворює постійну напругу акумулятора 12 В на змінну 220 В з частотою 50 Гц.</p>
+
+                <ul>
+                    <li>Котли опалення та циркуляційні насоси</li>
+                    <li>Холодильники, морозильні камери та ТВ</li>
+                    <li>Ноутбуки, ПК, роутери та засоби зв'язку</li>
+                    <li>Освітлення та зарядні станції</li>
+                </ul>
+
+                <div class="warning">
+                    ⚠️ <strong>Увага:</strong> Перед підключенням перевірте сукупну пускову та робочу потужність ваших приладів.
+                </div>
             </div>
-        </div>
+        </section>
 
-        <a href="#specs" class="button">Характеристики ↓</a>
-    </div>
+        <!-- Specifications Section -->
+        <section class="specifications" id="specs">
+            <h2>Технічні характеристики</h2>
 
-    <div class="hero-image">
-        <img src="images/inverter-front.jpg"
-             alt="Інвертор Houli 1500/3000W">
-    </div>
+            <div class="spec-table">
+                <div class="spec-row"><span>Тип пристрою</span><b>Інвертор (Перетворювач напруги)</b></div>
+                <div class="spec-row"><span>Вхідна напруга</span><b>12 В DC</b></div>
+                <div class="spec-row"><span>Діапазон вхідної напруги</span><b>9,5–15,5 В</b></div>
+                <div class="spec-row"><span>Вихідна напруга</span><b>220 В AC ±10%</b></div>
+                <div class="spec-row"><span>Номінальна потужність</span><b>1500 Вт</b></div>
+                <div class="spec-row"><span>Пікова потужність</span><b>3000 Вт</b></div>
+                <div class="spec-row"><span>Форма вихідного сигналу</span><b>Чиста синусоїда</b></div>
+                <div class="spec-row"><span>Частота</span><b>50 Гц</b></div>
+                <div class="spec-row"><span>ККД</span><b>До 95%</b></div>
+                <div class="spec-row"><span>Ступінь захисту</span><b>IP20</b></div>
+            </div>
 
-</section>
+            <p class="note">Характеристики наведені згідно з документацією виробника.</p>
+        </section>
 
-<section class="advantages" id="features">
+        <!-- Safety Section -->
+        <section class="safety" id="safety">
+            <h2>Правила безпеки</h2>
 
-    <h2>Переваги інвертора</h2>
-    <p class="subtitle">
-        Енергія для важливих пристроїв у будь-якій ситуації
-    </p>
+            <div class="safety-grid">
+                <div class="safety-card">
+                    <h3>01. Полярність підключення</h3>
+                    <p>Червоний кабель підключається до плюсової клеми (+), чорний — до мінусової (-). Перед підключенням переконайтеся, що вимикач у положенні OFF.</p>
+                </div>
 
-    <div class="cards">
+                <div class="safety-card">
+                    <h3>02. Вентиляція та середовище</h3>
+                    <p>Не закривайте вентиляційні отвори. Не використовуйте у вологих приміщеннях або поблизу легкозаймистих речовин.</p>
+                </div>
 
-        <div class="card">
-            <h3>Чиста синусоїда</h3>
-            <p>
-                Підходить для багатьох побутових пристроїв,
-                електроніки та обладнання з електродвигунами.
-            </p>
-        </div>
+                <div class="safety-card">
+                    <h3>03. Контроль навантаження</h3>
+                    <p>Не перевищуйте максимально допустиму постійну потужність (1500 Вт). Враховуйте високі пускові струми електродвигунів.</p>
+                </div>
 
-        <div class="card">
-            <h3>Система охолодження</h3>
-            <p>
-                Вбудований вентилятор допомагає відводити
-                тепло під час роботи пристрою.
-            </p>
-        </div>
+                <div class="safety-card">
+                    <h3>04. Електробезпека</h3>
+                    <p>Категорично заборонено підключати вихід інвертора до побутової мережі 220 В без спеціального перемикача введення резерву.</p>
+                </div>
+            </div>
+        </section>
 
-        <div class="card">
-            <h3>Система захисту</h3>
-            <p>
-                Захист від перевантаження, короткого замикання
-                та надмірної або низької напруги.
-            </p>
-        </div>
+        <!-- Documents Section -->
+        <section class="documents" id="docs">
+            <h2>Документи та інструкції</h2>
+            <p class="subtitle">Технічна документація та сертифікати якості</p>
 
-        <div class="card">
-            <h3>Для дому та автомобіля</h3>
-            <p>
-                Може використовуватися в автомобілі,
-                кемпері або як резервне джерело живлення.
-            </p>
-        </div>
+            <div class="doc-grid">
+                <div class="doc-card">
+                    <img src="images/certificate.jpg" alt="Сертифікат відповідності">
+                    <h3>Сертифікат відповідності</h3>
+                    <a href="images/certificate.jpg" target="_blank" rel="noopener" class="doc-link">Переглянути</a>
+                </div>
 
-    </div>
+                <div class="doc-card">
+                    <img src="images/certificate-annex.jpg" alt="Додаток до сертифіката">
+                    <h3>Додаток до сертифіката</h3>
+                    <a href="images/certificate-annex.jpg" target="_blank" rel="noopener" class="doc-link">Переглянути</a>
+                </div>
 
-</section>
+                <div class="doc-card">
+                    <div class="pdf-icon">PDF</div>
+                    <h3>Інструкція користувача</h3>
+                    <a href="instruction.pdf" target="_blank" rel="noopener" class="doc-link">Завантажити PDF</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<section class="product">
-
-    <div class="product-image">
-        <img src="images/inverter-back.jpg"
-             alt="Інвертор Houli з іншого боку">
-    </div>
-
-    <div class="product-text">
-        <p class="tag">КОМПАКТНИЙ ТА ФУНКЦІОНАЛЬНИЙ</p>
-
-        <h2>Живлення для<br>
-        <span>ваших пристроїв</span></h2>
-
-        <p>
-            Інвертор перетворює постійну напругу акумулятора
-            12 В на змінну напругу 220 В із частотою 50 Гц.
-        </p>
-
-        <ul>
-            <li>Котли опалення та насоси</li>
-            <li>Холодильники та телевізори</li>
-            <li>Ноутбуки та комп'ютери</li>
-            <li>Електроінструменти</li>
-            <li>Зарядні пристрої та електроніка</li>
-        </ul>
-
-        <p class="warning">
-            Перед підключенням перевірте робочу та пускову
-            потужність пристрою.
-        </p>
-    </div>
-
-</section>
-
-<section class="specifications" id="specs">
-
-    <h2>Технічні характеристики</h2>
-
-    <div class="spec-table">
-
-        <div><span>Тип пристрою</span><b>Інвертор</b></div>
-        <div><span>Вхідна напруга</span><b>12 В DC</b></div>
-        <div><span>Діапазон вхідної напруги</span><b>9,5–15,5 В</b></div>
-        <div><span>Вихідна напруга</span><b>220 В AC ±10%</b></div>
-        <div><span>Безперервна потужність</span><b>1500 Вт</b></div>
-        <div><span>Максимальна потужність</span><b>3000 Вт</b></div>
-        <div><span>Форма сигналу</span><b>Чиста синусоїда</b></div>
-        <div><span>Частота</span><b>50 Гц</b></div>
-        <div><span>ККД</span><b>До 95%</b></div>
-        <div><span>Ступінь захисту</span><b>IP20</b></div>
-        <div><span>Країна виробництва</span><b>Китай</b></div>
-
-    </div>
-
-    <p class="note">
-        Характеристики наведені за наданим описом товару.
-        Перевіряйте маркування конкретного пристрою.
-    </p>
-
-</section>
-
-<section class="safety">
-
-    <h2>Правила безпеки</h2>
-
-    <div class="safety-grid">
-
-        <div class="safety-card">
-            <h3>01. Правильне підключення</h3>
-            <p>
-                Червоний кабель підключається до плюсової
-                клеми акумулятора, чорний — до мінусової.
-                Перед підключенням вимкніть інвертор.
-            </p>
-        </div>
-
-        <div class="safety-card">
-            <h3>02. Вентиляція</h3>
-            <p>
-                Не закривайте вентиляційні отвори.
-                Не використовуйте інвертор біля води,
-                вогню або легкозаймистих газів.
-            </p>
-        </div>
-
-        <div class="safety-card">
-            <h3>03. Потужність</h3>
-            <p>
-                Не перевищуйте допустиму потужність.
-                Пусковий струм двигунів може бути
-                у кілька разів вищим за робочий.
-            </p>
-        </div>
-
-        <div class="safety-card">
-            <h3>04. Електробезпека</h3>
-            <p>
-                Не підключайте вихід інвертора паралельно
-                до міської електромережі. Не розбирайте
-                корпус самостійно.
-            </p>
-        </div>
-
-    </div>
-
-    <p class="warning">
-        Увага! Інвертор створює небезпечну напругу 220 В.
-        Дотримуйтеся інструкції виробника.
-    </p>
-
-</section>
-
-<section class="documents" id="docs">
-
-    <h2>Документи та інструкція</h2>
-
-    <p class="subtitle">
-        Документи, надані разом із товаром
-    </p>
-
-    <div class="doc-grid">
-
-        <div class="doc">
-            <img src="images/certificate.jpg"
-                 alt="Сертифікат відповідності">
-            <h3>Сертифікат відповідності</h3>
-            <a href="images/certificate.jpg" target="_blank">
-                Переглянути
-            </a>
-        </div>
-
-        <div class="doc">
-            <img src="images/certificate-annex.jpg"
-                 alt="Додаток до сертифіката">
-            <h3>Додаток до сертифіката</h3>
-            <a href="images/certificate-annex.jpg" target="_blank">
-                Переглянути
-            </a>
-        </div>
-
-        <div class="doc">
-            <div class="pdf-icon">PDF</div>
-            <h3>Інструкція користувача</h3>
-            <a href="instruction.pdf" target="_blank">
-                Відкрити інструкцію
-            </a>
-        </div>
-
-    </div>
-
-    <p class="note">
-        Документи розміщені для ознайомлення.
-        Їхня чинність і відповідність конкретному товару
-        окремо не перевірялися.
-    </p>
-
-</section>
-
-<footer>
-    <div class="logo">HOULI<span>POWER</span></div>
-
-    <p>
-        Інформаційна сторінка інвертора Houli.
-        Характеристики наведені для ознайомлення.
-    </p>
-
-    <a href="#top">На початок ↑</a>
-</footer>
+    <footer>
+        <div class="logo">HOULI<span>POWER</span></div>
+        <p>Інформаційна сторінка продукту Houli Power Inverter.</p>
+        <a href="#top" class="top-link">Нагору ↑</a>
+    </footer>
 
 </body>
 </html>
