@@ -1,4 +1,3 @@
-/* --- CSS VARIABLES & RESET --- */
 :root {
     --bg-main: #080d18;
     --bg-surface: #0c1423;
@@ -28,12 +27,10 @@ html {
 body {
     background-color: var(--bg-main);
     color: var(--text-primary);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-    overflow-x: hidden;
 }
 
-/* --- HEADER & NAVIGATION --- */
 header {
     position: sticky;
     top: 0;
@@ -42,25 +39,23 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 7%;
-    background-color: rgba(12, 20, 35, 0.85);
-    backdrop-filter: blur(10px);
+    background-color: rgba(12, 20, 35, 0.9);
+    backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--border-color);
 }
 
 .logo {
     font-size: 24px;
-    font-weight: 800;
+    font-weight: bold;
     color: var(--text-primary);
     text-decoration: none;
-    line-height: 1;
 }
 
 .logo span {
     display: block;
-    font-size: 9px;
+    font-size: 10px;
     letter-spacing: 4px;
     color: var(--accent);
-    margin-top: 3px;
 }
 
 nav {
@@ -72,7 +67,6 @@ nav a {
     color: var(--text-secondary);
     text-decoration: none;
     font-size: 14px;
-    font-weight: 500;
     transition: var(--transition);
 }
 
@@ -80,34 +74,32 @@ nav a:hover {
     color: var(--accent);
 }
 
-/* --- HERO SECTION --- */
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    padding: 100px 7% 80px;
-    background: radial-gradient(circle at 80% 30%, #12345a 0%, var(--bg-main) 70%);
+    padding: 90px 7%;
+    background: radial-gradient(circle at 80% 40%, #12345a, var(--bg-main) 60%);
 }
 
 .hero-text {
-    max-width: 580px;
+    max-width: 600px;
 }
 
 .tag {
     display: inline-block;
     color: var(--accent);
     font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 52px;
-    line-height: 1.1;
-    margin-bottom: 20px;
-    font-weight: 800;
+    font-size: 55px;
+    line-height: 1.15;
+    margin-bottom: 25px;
 }
 
 h1 span, h2 span {
@@ -116,91 +108,77 @@ h1 span, h2 span {
 
 .hero-text p {
     color: var(--text-secondary);
-    font-size: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .hero-image {
-    width: 45%;
-    display: flex;
-    justify-content: center;
+    width: 50%;
 }
 
 .hero-image img {
     width: 100%;
-    max-width: 500px;
-    height: auto;
-    filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.7));
-    transition: var(--transition);
-}
-
-.hero-image img:hover {
-    transform: scale(1.02);
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 
 .numbers {
     display: flex;
     gap: 30px;
-    margin-bottom: 35px;
+    margin: 35px 0;
 }
 
 .stat-item h2 {
-    font-size: 26px;
+    font-size: 22px;
     color: var(--accent);
 }
 
 .stat-item p {
-    font-size: 12px;
+    font-size: 11px;
     color: var(--text-secondary);
-    margin-bottom: 0;
 }
 
 .button {
     display: inline-block;
-    padding: 14px 30px;
-    background-color: var(--accent-hover);
-    color: var(--text-primary);
+    padding: 14px 25px;
+    background: var(--accent-hover);
+    color: white;
     text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
+    border-radius: 7px;
+    font-weight: bold;
     transition: var(--transition);
 }
 
 .button:hover {
-    background-color: var(--accent);
+    background: var(--accent);
     color: var(--bg-main);
-    box-shadow: 0 0 15px rgba(66, 191, 255, 0.4);
 }
 
-/* --- SECTION COMMON STYLES --- */
 .advantages, .specifications, .safety, .documents {
     padding: 90px 7%;
     text-align: center;
 }
 
 h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 35px;
+    margin-bottom: 15px;
 }
 
 .subtitle {
     color: var(--text-secondary);
     margin-bottom: 40px;
-    font-size: 15px;
 }
 
-/* --- ADVANTAGES --- */
 .cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
 }
 
 .card {
-    background-color: var(--bg-card);
+    background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: 12px;
-    padding: 30px 24px;
+    padding: 30px 20px;
     text-align: left;
     transition: var(--transition);
 }
@@ -212,8 +190,7 @@ h2 {
 
 .card h3 {
     color: var(--accent);
-    font-size: 18px;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .card p {
@@ -221,23 +198,21 @@ h2 {
     font-size: 14px;
 }
 
-/* --- PRODUCT DETAILS --- */
 .product {
     display: flex;
     align-items: center;
     gap: 60px;
-    padding: 90px 7%;
-    background-color: var(--bg-surface);
+    padding: 80px 7%;
+    background: var(--bg-surface);
 }
 
 .product-image {
-    width: 45%;
+    width: 50%;
 }
 
 .product-image img {
     width: 100%;
-    height: auto;
-    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
+    border-radius: 8px;
 }
 
 .product-text {
@@ -246,7 +221,6 @@ h2 {
 
 .product-text h2 {
     text-align: left;
-    margin-bottom: 20px;
 }
 
 .product-text p {
@@ -256,40 +230,40 @@ h2 {
 
 .product-text ul {
     padding-left: 20px;
-    color: var(--text-primary);
-    margin-bottom: 25px;
+    color: #d8e2f0;
+    margin-bottom: 20px;
 }
 
 .product-text li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .warning {
-    background-color: var(--warning-bg);
+    background: var(--warning-bg);
     border-left: 4px solid var(--warning-border);
-    padding: 15px 20px;
+    padding: 15px;
     color: var(--warning-text);
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 13px;
     text-align: left;
 }
 
-/* --- SPECIFICATIONS --- */
 .spec-table {
-    max-width: 750px;
-    margin: 30px auto;
-    background-color: var(--bg-card);
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: left;
+    background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: 12px;
-    padding: 10px 30px;
+    padding: 20px 30px;
 }
 
 .spec-row {
     display: flex;
     justify-content: space-between;
-    padding: 16px 0;
+    gap: 20px;
+    padding: 15px 0;
     border-bottom: 1px solid var(--border-color);
-    font-size: 15px;
 }
 
 .spec-row:last-child {
@@ -302,28 +276,27 @@ h2 {
 
 .spec-row b {
     text-align: right;
-    color: var(--text-primary);
 }
 
 .note {
     color: var(--text-muted);
-    font-size: 13px;
+    font-size: 12px;
+    margin-top: 20px;
 }
 
-/* --- SAFETY --- */
 .safety {
-    background-color: var(--bg-surface);
+    background: var(--bg-surface);
 }
 
 .safety-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     text-align: left;
 }
 
 .safety-card {
-    background-color: var(--bg-main);
+    background: var(--bg-main);
     border: 1px solid var(--border-color);
     padding: 25px;
     border-radius: 10px;
@@ -331,8 +304,7 @@ h2 {
 
 .safety-card h3 {
     color: var(--accent);
-    margin-bottom: 10px;
-    font-size: 16px;
+    margin-bottom: 12px;
 }
 
 .safety-card p {
@@ -340,7 +312,6 @@ h2 {
     font-size: 14px;
 }
 
-/* --- DOCUMENTS --- */
 .doc-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -348,7 +319,7 @@ h2 {
 }
 
 .doc-card {
-    background-color: var(--bg-card);
+    background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: 12px;
     padding: 20px;
@@ -359,24 +330,10 @@ h2 {
 
 .doc-card img {
     width: 100%;
-    height: 260px;
+    height: 300px;
     object-fit: contain;
-    background-color: #ffffff;
-    border-radius: 6px;
-    margin-bottom: 15px;
-}
-
-.pdf-icon {
-    width: 100%;
-    height: 260px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #17263b;
-    border-radius: 6px;
-    font-size: 48px;
-    font-weight: 800;
-    color: var(--accent);
+    background: #ffffff;
+    border-radius: 5px;
     margin-bottom: 15px;
 }
 
@@ -387,105 +344,98 @@ h2 {
 
 .doc-link {
     display: inline-block;
-    background-color: var(--accent-hover);
-    color: white;
+    background: var(--accent-hover);
     padding: 10px 20px;
     border-radius: 6px;
     text-decoration: none;
+    color: white;
     font-size: 13px;
-    font-weight: 600;
     transition: var(--transition);
 }
 
 .doc-link:hover {
-    background-color: var(--accent);
+    background: var(--accent);
     color: var(--bg-main);
 }
 
-/* --- FOOTER --- */
 footer {
     padding: 40px 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #050911;
+    gap: 30px;
+    background: #050911;
     border-top: 1px solid var(--border-color);
 }
 
 footer p {
+    max-width: 400px;
     color: var(--text-muted);
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .top-link {
     color: var(--accent);
     text-decoration: none;
-    font-weight: 600;
 }
 
-/* --- RESPONSIVE MEDIA QUERIES --- */
 @media (max-width: 900px) {
     header {
         flex-direction: column;
-        gap: 15px;
-        padding: 15px 5%;
+        gap: 20px;
     }
 
     nav {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
     }
 
     .hero, .product {
         flex-direction: column;
         text-align: center;
-        padding: 50px 5%;
+        padding: 60px 5%;
     }
 
     .hero-image, .product-image {
         width: 100%;
     }
 
-    .product-text h2 {
-        text-align: center;
-    }
-
     .numbers {
         justify-content: center;
     }
 
-    .warning {
+    footer {
+        flex-direction: column;
         text-align: center;
     }
 }
 
 @media (max-width: 550px) {
     h1 {
-        font-size: 36px;
+        font-size: 38px;
     }
 
     h2 {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     .numbers {
-        flex-direction: column;
-        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .spec-table {
+        padding: 15px;
     }
 
     .spec-row {
-        flex-direction: column;
-        gap: 5px;
+        font-size: 12px;
     }
 
-    .spec-row b {
-        text-align: left;
+    nav {
+        gap: 12px;
     }
 
-    footer {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
+    nav a {
+        font-size: 12px;
     }
 }
